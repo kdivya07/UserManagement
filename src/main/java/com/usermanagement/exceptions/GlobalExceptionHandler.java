@@ -1,5 +1,6 @@
 package com.usermanagement.exceptions;
 
+import com.usermanagement.constants.ErrorConstants;
 import org.apache.coyote.BadRequestException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -39,7 +40,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleGlobalException(Exception ex, WebRequest request) {
         ErrorResponse errorResponse = new ErrorResponse(LocalDateTime.now(), HttpStatus.INTERNAL_SERVER_ERROR.value(),
-                "Internal Server Error", "Unexpected error occuered.", request.getDescription(false));
+                "Internal Server Error", ErrorConstants.UNEXPECTED_ERROR, request.getDescription(false));
         return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
