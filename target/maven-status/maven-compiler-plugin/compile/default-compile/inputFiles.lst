@@ -1,0 +1,12 @@
+/Users/B0317258/Desktop/Backend Learning/springboot-edit/apidemo/src/main/java/com/usermanagement/springboot/apidemo/ApidemoApplication.java
+/Users/B0317258/Desktop/Backend Learning/springboot-edit/apidemo/src/main/java/com/usermanagement/springboot/apidemo/constants/ErrorConstants.java
+/Users/B0317258/Desktop/Backend Learning/springboot-edit/apidemo/src/main/java/com/usermanagement/springboot/apidemo/entity/User.java
+/Users/B0317258/Desktop/Backend Learning/springboot-edit/apidemo/src/main/java/com/usermanagement/springboot/apidemo/exception/DuplicateEmailException.java
+/Users/B0317258/Desktop/Backend Learning/springboot-edit/apidemo/src/main/java/com/usermanagement/springboot/apidemo/exception/ErrorResponse.java
+/Users/B0317258/Desktop/Backend Learning/springboot-edit/apidemo/src/main/java/com/usermanagement/springboot/apidemo/exception/GlobalExceptionHandler.java
+/Users/B0317258/Desktop/Backend Learning/springboot-edit/apidemo/src/main/java/com/usermanagement/springboot/apidemo/exception/ResourceNotFoundException.java
+/Users/B0317258/Desktop/Backend Learning/springboot-edit/apidemo/src/main/java/com/usermanagement/springboot/apidemo/repositories/UserRepository.java
+/Users/B0317258/Desktop/Backend Learning/springboot-edit/apidemo/src/main/java/com/usermanagement/springboot/apidemo/repositories/UserRepositoryImpl.java
+/Users/B0317258/Desktop/Backend Learning/springboot-edit/apidemo/src/main/java/com/usermanagement/springboot/apidemo/rest/UserRestController.java
+/Users/B0317258/Desktop/Backend Learning/springboot-edit/apidemo/src/main/java/com/usermanagement/springboot/apidemo/service/UserService.java
+/Users/B0317258/Desktop/Backend Learning/springboot-edit/apidemo/src/main/java/com/usermanagement/springboot/apidemo/service/UserServiceImpl.java
