@@ -148,3 +148,6 @@ java.lang.RuntimeException: Simulated exception
 2024-09-09 14:15:45 INFO  com.usermanagement.UserApplication - Started UserApplication in 0.198 seconds (process running for 3897.792)
 2024-09-09 14:15:45 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
 2024-09-09 14:15:45 INFO  com.usermanagement.UserApplication - Application ended.
+2024-09-09 15:01:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 15:01:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-09-09 15:01:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
