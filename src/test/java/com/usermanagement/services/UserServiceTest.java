@@ -106,3 +106,5 @@ public class UserServiceTest {
         assertEquals(String.format(ErrorConstants.USER_NOT_FOUND, 1), thrown.getMessage());
     }
 }
+
+//added test cases -- commit
