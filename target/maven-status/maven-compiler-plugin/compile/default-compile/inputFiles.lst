@@ -1,0 +1,14 @@
+/Users/B0317258/Desktop/UserManagement-main/src/main/java/com/usermanagement/UserApplication.java
+/Users/B0317258/Desktop/UserManagement-main/src/main/java/com/usermanagement/constants/EntityConstants.java
+/Users/B0317258/Desktop/UserManagement-main/src/main/java/com/usermanagement/constants/ErrorConstants.java
+/Users/B0317258/Desktop/UserManagement-main/src/main/java/com/usermanagement/entities/User.java
+/Users/B0317258/Desktop/UserManagement-main/src/main/java/com/usermanagement/exceptions/DuplicateEmailException.java
+/Users/B0317258/Desktop/UserManagement-main/src/main/java/com/usermanagement/exceptions/ErrorResponse.java
+/Users/B0317258/Desktop/UserManagement-main/src/main/java/com/usermanagement/exceptions/GlobalExceptionHandler.java
+/Users/B0317258/Desktop/UserManagement-main/src/main/java/com/usermanagement/exceptions/ResourceNotFoundException.java
+/Users/B0317258/Desktop/UserManagement-main/src/main/java/com/usermanagement/exceptions/UserNotFoundException.java
+/Users/B0317258/Desktop/UserManagement-main/src/main/java/com/usermanagement/repositories/UserRepository.java
+/Users/B0317258/Desktop/UserManagement-main/src/main/java/com/usermanagement/repositories/UserRepositoryImpl.java
+/Users/B0317258/Desktop/UserManagement-main/src/main/java/com/usermanagement/rest/UserRestController.java
+/Users/B0317258/Desktop/UserManagement-main/src/main/java/com/usermanagement/services/UserService.java
+/Users/B0317258/Desktop/UserManagement-main/src/main/java/com/usermanagement/services/UserServiceImpl.java

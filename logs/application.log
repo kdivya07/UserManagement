@@ -1,0 +1,350 @@
+2024-09-09 11:49:41 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-09 11:49:41 ERROR com.usermanagement.UserApplication - An error occurred
+java.lang.RuntimeException: Simulated exception
+	at com.usermanagement.UserApplication.main(UserApplication.java:19)
+2024-09-09 11:49:41 INFO  com.usermanagement.UserApplication - Application ended.
+2024-09-09 11:49:57 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-09 11:49:57 ERROR com.usermanagement.UserApplication - An error occurred
+java.lang.RuntimeException: Simulated exception
+	at com.usermanagement.UserApplication.main(UserApplication.java:19)
+2024-09-09 11:49:57 INFO  com.usermanagement.UserApplication - Application ended.
+2024-09-09 11:50:30 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-09 11:50:30 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-09 11:50:30 INFO  com.usermanagement.UserApplication - Starting UserApplication using Java 21.0.3 with PID 30543 (/Users/B0317258/Desktop/Backend Learning/UserManagement/apidemo/target/classes started by B0317258 in /Users/B0317258/Desktop/Backend Learning/UserManagement)
+2024-09-09 11:50:30 INFO  com.usermanagement.UserApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-09 11:50:30 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-09 11:50:30 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-09 11:50:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-09 11:50:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2024-09-09 11:50:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-09 11:50:31 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-09 11:50:31 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-09 11:50:31 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-09 11:50:31 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring embedded WebApplicationContext
+2024-09-09 11:50:31 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 529 ms
+2024-09-09 11:50:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-09 11:50:31 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37f0e9ef
+2024-09-09 11:50:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-09 11:50:31 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-09 11:50:31 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-09 11:50:31 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-09 11:50:31 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-09 11:50:32 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-09 11:50:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 11:50:32 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-09 11:50:32 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-09 11:50:32 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-09 11:50:32 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/user-mgmt'
+2024-09-09 11:50:32 INFO  com.usermanagement.UserApplication - Started UserApplication in 1.736 seconds (process running for 2.001)
+2024-09-09 11:50:32 INFO  com.usermanagement.UserApplication - Application ended.
+2024-09-09 11:51:14 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09 11:51:14 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-09 11:51:14 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-09 11:51:14 INFO  c.u.rest.UserRestController - Found 6 users
+2024-09-09 11:51:38 INFO  c.u.services.UserService - Saving user: User(id=2, firstName=Divya, lastName=K, password=test123, email=divya@airtel.com)
+2024-09-09 11:51:38 INFO  c.u.services.UserService - Successfully saved user: User(id=2, firstName=Divya, lastName=K, password=test123, email=divya@airtel.com)
+2024-09-09 11:51:38 INFO  c.u.rest.UserRestController - User updated with ID: 2
+2024-09-09 11:51:43 INFO  c.u.rest.UserRestController - Found 6 users
+2024-09-09 11:58:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 11:58:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-09 11:58:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-09 11:59:09 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-09 11:59:09 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-09 11:59:09 INFO  com.usermanagement.UserApplication - Starting UserApplication using Java 21.0.3 with PID 30594 (/Users/B0317258/Desktop/Backend Learning/UserManagement/apidemo/target/classes started by B0317258 in /Users/B0317258/Desktop/Backend Learning/UserManagement)
+2024-09-09 11:59:09 INFO  com.usermanagement.UserApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-09 11:59:09 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-09 11:59:09 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-09 11:59:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-09 11:59:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2024-09-09 11:59:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-09 11:59:10 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-09 11:59:10 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-09 11:59:10 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-09 11:59:10 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring embedded WebApplicationContext
+2024-09-09 11:59:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 600 ms
+2024-09-09 11:59:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-09 11:59:10 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ded7584
+2024-09-09 11:59:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-09 11:59:10 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-09 11:59:10 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-09 11:59:10 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-09 11:59:10 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-09 11:59:11 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-09 11:59:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 11:59:11 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-09 11:59:11 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-09 11:59:11 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-09 11:59:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/user-mgmt'
+2024-09-09 11:59:11 INFO  com.usermanagement.UserApplication - Started UserApplication in 1.886 seconds (process running for 2.163)
+2024-09-09 11:59:11 INFO  com.usermanagement.UserApplication - Application ended.
+2024-09-09 11:59:21 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09 11:59:21 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-09 11:59:21 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-09-09 11:59:21 INFO  c.u.rest.UserRestController - Found 6 users
+2024-09-09 12:00:00 INFO  c.u.services.UserService - Saving user: User(id=6, firstName=Lakshay, lastName=Ahuja, password=test123, email=laksshay@airtel.com)
+2024-09-09 12:00:00 INFO  c.u.services.UserService - Successfully saved user: User(id=6, firstName=Lakshay, lastName=Ahuja, password=test123, email=laksshay@airtel.com)
+2024-09-09 12:00:00 INFO  c.u.rest.UserRestController - User addded with ID: 6
+2024-09-09 12:00:10 INFO  c.u.rest.UserRestController - Found 6 users
+2024-09-09 14:03:49 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h12m8s204ms).
+2024-09-09 14:15:43 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-09-09 14:15:43 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-09-09 14:15:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 14:15:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-09 14:15:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-09 14:15:43 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-09 14:15:43 INFO  com.usermanagement.UserApplication - Starting UserApplication using Java 21.0.3 with PID 30594 (/Users/B0317258/Desktop/Backend Learning/UserManagement/apidemo/target/classes started by B0317258 in /Users/B0317258/Desktop/Backend Learning/UserManagement)
+2024-09-09 14:15:43 INFO  com.usermanagement.UserApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-09 14:15:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-09 14:15:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-09-09 14:15:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-09 14:15:43 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-09 14:15:43 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-09 14:15:43 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-09 14:15:43 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring embedded WebApplicationContext
+2024-09-09 14:15:43 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 151 ms
+2024-09-09 14:15:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-09-09 14:15:43 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16e6f007
+2024-09-09 14:15:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-09-09 14:15:43 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-09 14:15:43 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-09 14:15:43 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-09 14:15:43 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-09 14:15:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 14:15:43 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-09 14:15:43 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-09 14:15:43 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-09 14:15:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/user-mgmt'
+2024-09-09 14:15:43 INFO  com.usermanagement.UserApplication - Started UserApplication in 0.388 seconds (process running for 3896.134)
+2024-09-09 14:15:43 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-09 14:15:43 INFO  com.usermanagement.UserApplication - Application ended.
+2024-09-09 14:15:44 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2024-09-09 14:15:45 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-09-09 14:15:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 14:15:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-09-09 14:15:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-09-09 14:15:45 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-09 14:15:45 INFO  com.usermanagement.UserApplication - Starting UserApplication using Java 21.0.3 with PID 30594 (/Users/B0317258/Desktop/Backend Learning/UserManagement/apidemo/target/classes started by B0317258 in /Users/B0317258/Desktop/Backend Learning/UserManagement)
+2024-09-09 14:15:45 INFO  com.usermanagement.UserApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-09 14:15:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-09 14:15:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2024-09-09 14:15:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-09 14:15:45 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-09 14:15:45 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-09 14:15:45 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-09 14:15:45 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring embedded WebApplicationContext
+2024-09-09 14:15:45 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 84 ms
+2024-09-09 14:15:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-09-09 14:15:45 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f89b482
+2024-09-09 14:15:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-09-09 14:15:45 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-09 14:15:45 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-09 14:15:45 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-09 14:15:45 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-09 14:15:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 14:15:45 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-09 14:15:45 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-09 14:15:45 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-09 14:15:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/user-mgmt'
+2024-09-09 14:15:45 INFO  com.usermanagement.UserApplication - Started UserApplication in 0.198 seconds (process running for 3897.792)
+2024-09-09 14:15:45 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-09 14:15:45 INFO  com.usermanagement.UserApplication - Application ended.
+2024-09-09 15:01:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 15:01:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-09-09 15:01:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-09-09 15:49:25 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-09 15:49:25 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-09 15:49:25 INFO  com.usermanagement.UserApplication - Starting UserApplication using Java 21.0.3 with PID 33136 (/Users/B0317258/Desktop/Backend Learning/UserManagement/target/classes started by B0317258 in /Users/B0317258/Desktop/Backend Learning/UserManagement)
+2024-09-09 15:49:25 INFO  com.usermanagement.UserApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-09 15:49:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-09 15:49:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-09 15:49:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-09 15:49:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2024-09-09 15:49:25 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-09 15:49:25 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-09 15:49:25 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-09 15:49:25 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-09 15:49:25 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring embedded WebApplicationContext
+2024-09-09 15:49:25 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 555 ms
+2024-09-09 15:49:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-09 15:49:26 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39518443
+2024-09-09 15:49:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-09 15:49:26 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-09 15:49:26 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-09 15:49:26 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-09 15:49:26 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-09 15:49:26 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-09 15:49:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 15:49:27 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-09 15:49:27 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-09 15:49:27 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-09 15:49:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/user-mgmt'
+2024-09-09 15:49:27 INFO  com.usermanagement.UserApplication - Started UserApplication in 1.978 seconds (process running for 2.337)
+2024-09-09 15:49:27 INFO  com.usermanagement.UserApplication - Application ended.
+2024-09-09 15:49:30 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 15:49:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-09 15:49:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-12 11:31:36 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-12 11:31:36 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-12 11:31:36 INFO  com.usermanagement.UserApplication - Starting UserApplication using Java 21.0.3 with PID 56010 (/Users/B0317258/Desktop/UserManagement-main/target/classes started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-12 11:31:36 INFO  com.usermanagement.UserApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-12 11:31:36 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-12 11:31:36 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-12 11:31:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12 11:31:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2024-09-12 11:31:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-12 11:31:37 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-12 11:31:37 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-12 11:31:37 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12 11:31:37 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring embedded WebApplicationContext
+2024-09-12 11:31:37 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 617 ms
+2024-09-12 11:31:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-12 11:31:37 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45611f0
+2024-09-12 11:31:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-12 11:31:37 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12 11:31:37 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12 11:31:37 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-12 11:31:37 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12 11:31:38 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12 11:31:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12 11:31:38 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12 11:31:38 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-12 11:31:38 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-12 11:31:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/user-mgmt'
+2024-09-12 11:31:38 INFO  com.usermanagement.UserApplication - Started UserApplication in 2.023 seconds (process running for 2.491)
+2024-09-12 11:31:38 INFO  com.usermanagement.UserApplication - Application ended.
+2024-09-12 11:31:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12 11:31:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-12 11:31:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-12 12:36:58 DEBUG o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [UserApplicationTests]: using SpringBootContextLoader
+2024-09-12 12:36:58 DEBUG o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.usermanagement.UserApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-09-12 12:36:58 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.UserApplicationTests]: UserApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-12 12:36:58 DEBUG o.s.b.t.c.SpringBootTestContextBootstrapper - Using ContextCustomizerFactory implementations for test class [UserApplicationTests]: [ImportsContextCustomizerFactory, ExcludeFilterContextCustomizerFactory, HttpGraphQlTesterContextCustomizerFactory, DuplicateJsonObjectContextCustomizerFactory, MockitoContextCustomizerFactory, TestRestTemplateContextCustomizerFactory, WebTestClientContextCustomizerFactory, DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory, OverrideAutoConfigurationContextCustomizerFactory, ObservabilityContextCustomizerFactory, TypeExcludeFiltersContextCustomizerFactory, PropertyMappingContextCustomizerFactory, WebDriverContextCustomizerFactory, MockServerContainerContextCustomizerFactory, DynamicPropertiesContextCustomizerFactory]
+2024-09-12 12:36:58 DEBUG o.s.b.t.c.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [UserApplicationTests]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer, DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, WebDriverContextCustomizer]
+2024-09-12 12:36:58 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/B0317258/Desktop/UserManagement-main/target/classes/com/usermanagement/UserApplication.class]
+2024-09-12 12:36:58 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.UserApplicationTests
+2024-09-12 12:36:58 DEBUG o.s.t.c.u.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.observation.MicrometerObservationRegistryTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: io.micrometer.context.ThreadLocalAccessor. MicrometerObservationRegistryTestExecutionListener requires io.micrometer:micrometer-observation:1.10.8 or higher and io.micrometer:context-propagation:1.0.3 or higher.
+2024-09-12 12:36:58 DEBUG o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [UserApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2024-09-12 12:36:58 DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener - Before test class: class [UserApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+2024-09-12 12:36:58 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-12 12:36:58 INFO  c.u.UserApplicationTests - Starting UserApplicationTests using Java 21.0.3 with PID 56862 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-12 12:36:58 INFO  c.u.UserApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-09-12 12:36:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12 12:36:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2024-09-12 12:36:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-12 12:36:59 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b560eb0
+2024-09-12 12:36:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-12 12:36:59 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12 12:36:59 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12 12:36:59 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-12 12:36:59 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12 12:36:59 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12 12:36:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12 12:36:59 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12 12:37:00 INFO  c.u.UserApplicationTests - Started UserApplicationTests in 1.586 seconds (process running for 2.02)
+2024-09-12 12:37:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12 12:37:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-12 12:37:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-12 12:37:06 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-12 12:37:06 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-12 12:37:06 INFO  com.usermanagement.UserApplication - Starting UserApplication using Java 21.0.3 with PID 56877 (/Users/B0317258/Desktop/UserManagement-main/target/classes started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-12 12:37:06 INFO  com.usermanagement.UserApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-12 12:37:06 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-12 12:37:06 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-12 12:37:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12 12:37:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2024-09-12 12:37:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-12 12:37:07 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-12 12:37:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-12 12:37:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12 12:37:07 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring embedded WebApplicationContext
+2024-09-12 12:37:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 496 ms
+2024-09-12 12:37:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-12 12:37:07 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d6d6438
+2024-09-12 12:37:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-12 12:37:07 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12 12:37:07 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12 12:37:07 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-12 12:37:07 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12 12:37:07 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12 12:37:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12 12:37:08 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12 12:37:08 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-12 12:37:08 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-12 12:37:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/user-mgmt'
+2024-09-12 12:37:08 INFO  com.usermanagement.UserApplication - Started UserApplication in 1.621 seconds (process running for 1.89)
+2024-09-12 12:37:08 INFO  com.usermanagement.UserApplication - Application ended.
+2024-09-12 12:37:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12 12:37:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-12 12:37:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-12 12:41:53 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-12 12:41:53 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-12 12:41:53 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-12 12:41:53 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=Test, lastName=User, password=null, email=test@example.com)
+2024-09-12 12:41:53 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-12 12:41:53 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-12 12:41:53 ERROR c.u.services.UserService - User with ID 1 not found for deletion
+2024-09-12 12:41:53 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=Test, lastName=User, password=null, email=test@example.com)
+2024-09-12 12:41:53 INFO  c.u.services.UserService - Successfully saved user: User(id=1, firstName=Test, lastName=User, password=null, email=test@example.com)
+2024-09-12 12:41:53 DEBUG c.u.services.UserService - Get all users.
+2024-09-12 12:41:53 DEBUG c.u.services.UserService - Received 1 users
+2024-09-12 12:41:53 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-12 12:41:53 INFO  c.u.services.UserService - Successfully deleted user with ID: 1
+2024-09-12 12:44:24 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=Test, lastName=User, password=null, email=test@example.com)
+2024-09-12 12:44:24 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-12 12:45:02 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-12 12:45:02 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-12 12:45:02 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-12 12:45:02 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=Test, lastName=User, password=password123, email=test@example.com)
+2024-09-12 12:45:02 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-12 12:45:02 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-12 12:45:02 ERROR c.u.services.UserService - User with ID 1 not found for deletion
+2024-09-12 12:45:02 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=Test, lastName=User, password=password123, email=test@example.com)
+2024-09-12 12:45:02 INFO  c.u.services.UserService - Successfully saved user: User(id=1, firstName=Test, lastName=User, password=password123, email=test@example.com)
+2024-09-12 12:45:02 DEBUG c.u.services.UserService - Get all users.
+2024-09-12 12:45:02 DEBUG c.u.services.UserService - Received 1 users
+2024-09-12 12:45:02 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-12 12:45:02 INFO  c.u.services.UserService - Successfully deleted user with ID: 1
+2024-09-12 12:45:34 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=Test, lastName=User, password=password123, email=test@example.com)
+2024-09-12 12:45:34 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-12 12:45:54 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=Test, lastName=User, password=password123, email=test@example.com)
+2024-09-12 12:45:54 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-12 12:49:33 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=Test, lastName=User, password=password123, email=test@example.com)
+2024-09-12 12:49:33 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-12 13:38:43 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-12 13:39:09 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-12 13:39:09 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-12 13:39:27 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=Test, lastName=User, password=password123, email=test@example.com)
+2024-09-12 13:39:27 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-12 13:40:25 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=Test, lastName=User, password=password123, email=test@example.com)
+2024-09-12 13:40:25 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-13 10:10:45 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=Test, lastName=User, password=password123, email=test@example.com)
+2024-09-13 10:10:45 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-13 10:10:58 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-13 10:10:58 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-13 10:10:58 INFO  com.usermanagement.UserApplication - Starting UserApplication using Java 21.0.3 with PID 64388 (/Users/B0317258/Desktop/UserManagement-main/target/classes started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-13 10:10:58 INFO  com.usermanagement.UserApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-13 10:10:58 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-13 10:10:58 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-13 10:10:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-13 10:10:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2024-09-13 10:10:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-13 10:10:58 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-13 10:10:58 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-13 10:10:58 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-13 10:10:58 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring embedded WebApplicationContext
+2024-09-13 10:10:58 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 566 ms
+2024-09-13 10:10:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-13 10:10:59 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@546dec5c
+2024-09-13 10:10:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-13 10:10:59 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-13 10:10:59 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-13 10:10:59 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-13 10:10:59 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-13 10:10:59 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-13 10:10:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13 10:10:59 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-13 10:11:00 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-09-13 10:11:00 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-13 10:11:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/user-mgmt'
+2024-09-13 10:11:00 INFO  com.usermanagement.UserApplication - Started UserApplication in 1.862 seconds (process running for 2.172)
+2024-09-13 10:11:00 INFO  com.usermanagement.UserApplication - Application ended.
