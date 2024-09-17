@@ -38,7 +38,8 @@ public class UserRestController {
         User user = userService.findByID(userID);
         if (user == null) {
             logger.warn("User ID not found: {}", userID);
-            throw new RuntimeException("ID not found - " + userID);
+            return ResponseEntity.notFound().build();
+            //throw new RuntimeException("ID not found - " + userID);
         }
         logger.info("User found with ID: {}", userID);
         return ResponseEntity.ok(user);
@@ -61,16 +62,18 @@ public class UserRestController {
     }
 
     @DeleteMapping("/users/{userID}")
-    public String deleteUser(@PathVariable int userID) throws UserNotFoundException {
+    public ResponseEntity<String> deleteUser(@PathVariable int userID) throws UserNotFoundException {
         logger.debug("Request to delete user with ID: {}", userID);
         User tempUser = userService.findByID(userID);
         if (tempUser == null) {
             logger.warn("User ID not found: {}", userID);
-            throw new UserNotFoundException(userID);
+            return ResponseEntity.notFound().build();
+            //throw new UserNotFoundException(userID);
         }
         userService.deleteById(userID);
         logger.info("User deleted with ID: {}", userID);
-        return "Deleted user id - " + userID;
+        return ResponseEntity.ok("Deleted user id - " + userID);
+        //return "Deleted user id - " + userID;
     }
 
 }

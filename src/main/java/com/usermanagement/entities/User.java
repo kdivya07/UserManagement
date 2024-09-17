@@ -37,6 +37,14 @@ public class User {
     @Column(name = "email", unique = true)
     private String email;
 
+    public User(int id, String firstName, String lastName, String password, String email) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.password = password;
+        this.email = email;
+    }
+
     public int getId() {
         return id;
     }

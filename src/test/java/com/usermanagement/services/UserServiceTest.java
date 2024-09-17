@@ -32,12 +32,7 @@ public class UserServiceTest {
 
     @BeforeEach
     void setUp() {
-        user = new User();
-        user.setId(1);
-        user.setEmail("test@example.com");
-        user.setPassword("password123");
-        user.setFirstName("Test");
-        user.setLastName("User");
+        user = new User(1, "test", "user", "password123", "test@example.com");
 
         userList = new ArrayList<>();
         userList.add(user);
@@ -70,7 +65,6 @@ public class UserServiceTest {
     }
 
     @Test
-    @Transactional
     void save_NewUser_SuccessfullySavesUser() {
         when(userRepository.existsByEmail(user.getEmail())).thenReturn(false);
         when(userRepository.save(user)).thenReturn(user);
@@ -107,4 +101,3 @@ public class UserServiceTest {
     }
 }
 
-//added test cases -- commit
