@@ -1,6 +1,7 @@
 package com.usermanagement.exceptions;
 
 import com.usermanagement.constants.ErrorConstants;
+import lombok.Data;
 import org.apache.coyote.BadRequestException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +11,7 @@ import org.springframework.web.context.request.WebRequest;
 
 import java.time.LocalDateTime;
 
+@Data
 @ControllerAdvice
 public class GlobalExceptionHandler {
 

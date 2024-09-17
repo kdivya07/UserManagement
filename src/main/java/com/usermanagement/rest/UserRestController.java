@@ -62,7 +62,7 @@ public class UserRestController {
     }
 
     @DeleteMapping("/users/{userID}")
-    public ResponseEntity<String> deleteUser(@PathVariable int userID) throws UserNotFoundException {
+    public ResponseEntity<String> deleteUser(@PathVariable int userID) {
         logger.debug("Request to delete user with ID: {}", userID);
         User tempUser = userService.findByID(userID);
         if (tempUser == null) {

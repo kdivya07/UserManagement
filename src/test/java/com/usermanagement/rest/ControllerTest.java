@@ -40,14 +40,14 @@ public class ControllerTest {
     private ObjectMapper objectMapper = new ObjectMapper();
 
     private User user;
-    private List<User> userList;
+//    private List<User> userList;
 
     @BeforeEach
     public void setup() {
         MockitoAnnotations.openMocks(this);
         user = new User(1, "test", "user", "password123", "test@example.com");
 
-        userList = Collections.singletonList(user);
+  //      userList = Collections.singletonList(user);
     }
 
 
@@ -75,8 +75,6 @@ public class ControllerTest {
 
     @Test
     public void testGetUser() throws Exception {
-        //User user = new User(1, "John", "Doe", "password123", "john.doe@example.com");
-
         when(userService.findByID(1)).thenReturn(user);
 
         mockMvc.perform(get("/users/1")
@@ -94,7 +92,7 @@ public class ControllerTest {
 
         mockMvc.perform(get("/users/1")
                         .contentType(MediaType.APPLICATION_JSON))
-                        .andExpect(status().isNotFound());
+                .andExpect(status().isNotFound());
     }
 
     @Test
@@ -113,7 +111,6 @@ public class ControllerTest {
 
     @Test
     public void testUpdateUser() throws Exception {
-        //User user = new User(1, "John", "Doe", "password123", "john.doe@example.com");
         when(userService.save(user)).thenReturn(user);
 
         mockMvc.perform(put("/users")
@@ -128,7 +125,6 @@ public class ControllerTest {
 
     @Test
     public void testDeleteUser() throws Exception {
-        User user = new User(1, "John", "Doe", "password123", "john.doe@example.com");
         when(userService.findByID(1)).thenReturn(user);
 
         mockMvc.perform(delete("/users/1")
@@ -145,7 +141,6 @@ public class ControllerTest {
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound());
     }
-
 
 
 }

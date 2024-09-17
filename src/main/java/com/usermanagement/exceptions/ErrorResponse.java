@@ -1,7 +1,10 @@
 package com.usermanagement.exceptions;
 
+import lombok.Data;
+
 import java.time.LocalDateTime;
 
+@Data
 public class ErrorResponse {
     private LocalDateTime timestamp;
     private int status;
