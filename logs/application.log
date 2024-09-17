@@ -3078,3 +3078,239 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2024-09-17 14:22:51 INFO  c.u.rest.UserRestController - User found with ID: 1
 2024-09-17 14:22:51 INFO  c.u.rest.UserRestController - User deleted with ID: 1
 2024-09-17 14:22:51 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-17 15:26:31 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-17 15:26:31 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-17 15:26:31 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-17 15:26:31 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-17 15:26:31 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-17 15:26:31 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-17 15:26:31 ERROR c.u.services.UserService - User with ID 1 not found for deletion
+2024-09-17 15:26:31 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-17 15:26:31 INFO  c.u.services.UserService - Successfully saved user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-17 15:26:31 DEBUG c.u.services.UserService - Get all users.
+2024-09-17 15:26:31 DEBUG c.u.services.UserService - Received 1 users
+2024-09-17 15:26:31 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-17 15:26:31 INFO  c.u.services.UserService - Successfully deleted user with ID: 1
+2024-09-17 15:26:31 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ControllerTest]: using SpringBootContextLoader
+2024-09-17 15:26:31 DEBUG o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.usermanagement.rest.ControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-09-17 15:26:31 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.rest.ControllerTest]: ControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-17 15:26:31 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizerFactory implementations for test class [ControllerTest]: [ImportsContextCustomizerFactory, ExcludeFilterContextCustomizerFactory, HttpGraphQlTesterContextCustomizerFactory, DuplicateJsonObjectContextCustomizerFactory, MockitoContextCustomizerFactory, TestRestTemplateContextCustomizerFactory, WebTestClientContextCustomizerFactory, DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory, OverrideAutoConfigurationContextCustomizerFactory, ObservabilityContextCustomizerFactory, TypeExcludeFiltersContextCustomizerFactory, PropertyMappingContextCustomizerFactory, WebDriverContextCustomizerFactory, MockServerContainerContextCustomizerFactory, DynamicPropertiesContextCustomizerFactory]
+2024-09-17 15:26:31 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizers for test class [ControllerTest]: [ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer, DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, WebDriverContextCustomizer]
+2024-09-17 15:26:31 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/B0317258/Desktop/UserManagement-main/target/classes/com/usermanagement/UserApplication.class]
+2024-09-17 15:26:31 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.rest.ControllerTest
+2024-09-17 15:26:31 DEBUG o.s.t.c.u.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.observation.MicrometerObservationRegistryTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: io.micrometer.context.ThreadLocalAccessor. MicrometerObservationRegistryTestExecutionListener requires io.micrometer:micrometer-observation:1.10.8 or higher and io.micrometer:context-propagation:1.0.3 or higher.
+2024-09-17 15:26:31 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using TestExecutionListeners for test class [ControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2024-09-17 15:26:31 DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener - Before test class: class [ControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+2024-09-17 15:26:31 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-17 15:26:31 INFO  c.usermanagement.rest.ControllerTest - Starting ControllerTest using Java 21.0.3 with PID 81500 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-17 15:26:31 INFO  c.usermanagement.rest.ControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:26:32 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-09-17 15:26:32 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-09-17 15:26:32 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-09-17 15:26:32 INFO  c.usermanagement.rest.ControllerTest - Started ControllerTest in 0.509 seconds (process running for 1.713)
+2024-09-17 15:26:32 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-17 15:26:32 INFO  c.u.rest.UserRestController - User added with ID: 1
+2024-09-17 15:26:32 INFO  c.u.rest.UserRestController - Found 2 users
+2024-09-17 15:26:32 INFO  c.u.rest.UserRestController - User updated with ID: 1
+2024-09-17 15:26:32 INFO  c.u.rest.UserRestController - User found with ID: 1
+2024-09-17 15:26:32 INFO  c.u.rest.UserRestController - User deleted with ID: 1
+2024-09-17 15:26:32 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-17 15:26:32 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.UserApplicationTests]: UserApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-17 15:26:32 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.UserApplicationTests
+2024-09-17 15:26:32 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-17 15:26:32 INFO  c.u.UserApplicationTests - Starting UserApplicationTests using Java 21.0.3 with PID 81500 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-17 15:26:32 INFO  c.u.UserApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:26:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:26:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2024-09-17 15:26:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-17 15:26:32 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5364b481
+2024-09-17 15:26:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-17 15:26:32 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:26:32 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:26:32 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-17 15:26:32 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:26:33 INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.usermanagement.entities.User (class must be instantiated by Interceptor)
+2024-09-17 15:26:33 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:26:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:26:33 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:26:33 INFO  c.u.UserApplicationTests - Started UserApplicationTests in 1.18 seconds (process running for 3.0)
+2024-09-17 15:26:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:26:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:26:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-17 15:26:52 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-17 15:26:52 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-17 15:26:52 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-17 15:26:52 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-17 15:26:52 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-17 15:26:52 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-17 15:26:52 ERROR c.u.services.UserService - User with ID 1 not found for deletion
+2024-09-17 15:26:52 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-17 15:26:52 INFO  c.u.services.UserService - Successfully saved user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-17 15:26:52 DEBUG c.u.services.UserService - Get all users.
+2024-09-17 15:26:52 DEBUG c.u.services.UserService - Received 1 users
+2024-09-17 15:26:52 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-17 15:26:52 INFO  c.u.services.UserService - Successfully deleted user with ID: 1
+2024-09-17 15:26:52 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ControllerTest]: using SpringBootContextLoader
+2024-09-17 15:26:52 DEBUG o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.usermanagement.rest.ControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-09-17 15:26:52 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.rest.ControllerTest]: ControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-17 15:26:52 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizerFactory implementations for test class [ControllerTest]: [ImportsContextCustomizerFactory, ExcludeFilterContextCustomizerFactory, HttpGraphQlTesterContextCustomizerFactory, DuplicateJsonObjectContextCustomizerFactory, MockitoContextCustomizerFactory, TestRestTemplateContextCustomizerFactory, WebTestClientContextCustomizerFactory, DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory, OverrideAutoConfigurationContextCustomizerFactory, ObservabilityContextCustomizerFactory, TypeExcludeFiltersContextCustomizerFactory, PropertyMappingContextCustomizerFactory, WebDriverContextCustomizerFactory, MockServerContainerContextCustomizerFactory, DynamicPropertiesContextCustomizerFactory]
+2024-09-17 15:26:52 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizers for test class [ControllerTest]: [ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer, DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, WebDriverContextCustomizer]
+2024-09-17 15:26:52 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/B0317258/Desktop/UserManagement-main/target/classes/com/usermanagement/UserApplication.class]
+2024-09-17 15:26:52 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.rest.ControllerTest
+2024-09-17 15:26:52 DEBUG o.s.t.c.u.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.observation.MicrometerObservationRegistryTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: io.micrometer.context.ThreadLocalAccessor. MicrometerObservationRegistryTestExecutionListener requires io.micrometer:micrometer-observation:1.10.8 or higher and io.micrometer:context-propagation:1.0.3 or higher.
+2024-09-17 15:26:52 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using TestExecutionListeners for test class [ControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2024-09-17 15:26:52 DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener - Before test class: class [ControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+2024-09-17 15:26:53 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-17 15:26:53 INFO  c.usermanagement.rest.ControllerTest - Starting ControllerTest using Java 21.0.3 with PID 81553 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-17 15:26:53 INFO  c.usermanagement.rest.ControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:26:53 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-09-17 15:26:53 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-09-17 15:26:53 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2024-09-17 15:26:53 INFO  c.usermanagement.rest.ControllerTest - Started ControllerTest in 0.482 seconds (process running for 1.59)
+2024-09-17 15:26:53 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-17 15:26:53 INFO  c.u.rest.UserRestController - User added with ID: 1
+2024-09-17 15:26:53 INFO  c.u.rest.UserRestController - Found 2 users
+2024-09-17 15:26:53 INFO  c.u.rest.UserRestController - User updated with ID: 1
+2024-09-17 15:26:53 INFO  c.u.rest.UserRestController - User found with ID: 1
+2024-09-17 15:26:53 INFO  c.u.rest.UserRestController - User deleted with ID: 1
+2024-09-17 15:26:53 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-17 15:26:53 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.UserApplicationTests]: UserApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-17 15:26:53 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.UserApplicationTests
+2024-09-17 15:26:53 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-17 15:26:53 INFO  c.u.UserApplicationTests - Starting UserApplicationTests using Java 21.0.3 with PID 81553 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-17 15:26:53 INFO  c.u.UserApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:26:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:26:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2024-09-17 15:26:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-17 15:26:54 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5364b481
+2024-09-17 15:26:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-17 15:26:54 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:26:54 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:26:54 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-17 15:26:54 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:26:54 INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.usermanagement.entities.User (class must be instantiated by Interceptor)
+2024-09-17 15:26:54 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:26:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:26:54 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:26:54 INFO  c.u.UserApplicationTests - Started UserApplicationTests in 1.028 seconds (process running for 2.723)
+2024-09-17 15:26:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:26:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:26:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-17 15:27:30 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-17 15:27:30 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-17 15:27:30 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-17 15:27:30 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-17 15:27:30 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-17 15:27:30 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-17 15:27:30 ERROR c.u.services.UserService - User with ID 1 not found for deletion
+2024-09-17 15:27:30 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-17 15:27:30 INFO  c.u.services.UserService - Successfully saved user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-17 15:27:30 DEBUG c.u.services.UserService - Get all users.
+2024-09-17 15:27:30 DEBUG c.u.services.UserService - Received 1 users
+2024-09-17 15:27:30 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-17 15:27:30 INFO  c.u.services.UserService - Successfully deleted user with ID: 1
+2024-09-17 15:27:30 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ControllerTest]: using SpringBootContextLoader
+2024-09-17 15:27:30 DEBUG o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.usermanagement.rest.ControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-09-17 15:27:30 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.rest.ControllerTest]: ControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-17 15:27:30 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizerFactory implementations for test class [ControllerTest]: [ImportsContextCustomizerFactory, ExcludeFilterContextCustomizerFactory, HttpGraphQlTesterContextCustomizerFactory, DuplicateJsonObjectContextCustomizerFactory, MockitoContextCustomizerFactory, TestRestTemplateContextCustomizerFactory, WebTestClientContextCustomizerFactory, DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory, OverrideAutoConfigurationContextCustomizerFactory, ObservabilityContextCustomizerFactory, TypeExcludeFiltersContextCustomizerFactory, PropertyMappingContextCustomizerFactory, WebDriverContextCustomizerFactory, MockServerContainerContextCustomizerFactory, DynamicPropertiesContextCustomizerFactory]
+2024-09-17 15:27:30 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizers for test class [ControllerTest]: [ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer, DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, WebDriverContextCustomizer]
+2024-09-17 15:27:30 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/B0317258/Desktop/UserManagement-main/target/classes/com/usermanagement/UserApplication.class]
+2024-09-17 15:27:30 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.rest.ControllerTest
+2024-09-17 15:27:31 DEBUG o.s.t.c.u.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.observation.MicrometerObservationRegistryTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: io.micrometer.context.ThreadLocalAccessor. MicrometerObservationRegistryTestExecutionListener requires io.micrometer:micrometer-observation:1.10.8 or higher and io.micrometer:context-propagation:1.0.3 or higher.
+2024-09-17 15:27:31 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using TestExecutionListeners for test class [ControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2024-09-17 15:27:31 DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener - Before test class: class [ControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+2024-09-17 15:27:31 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-17 15:27:31 INFO  c.usermanagement.rest.ControllerTest - Starting ControllerTest using Java 21.0.3 with PID 81623 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-17 15:27:31 INFO  c.usermanagement.rest.ControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:27:31 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-09-17 15:27:31 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-09-17 15:27:31 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2024-09-17 15:27:31 INFO  c.usermanagement.rest.ControllerTest - Started ControllerTest in 0.561 seconds (process running for 1.744)
+2024-09-17 15:27:31 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-17 15:27:31 INFO  c.u.rest.UserRestController - User added with ID: 1
+2024-09-17 15:27:31 INFO  c.u.rest.UserRestController - Found 2 users
+2024-09-17 15:27:31 INFO  c.u.rest.UserRestController - User updated with ID: 1
+2024-09-17 15:27:31 INFO  c.u.rest.UserRestController - User found with ID: 1
+2024-09-17 15:27:31 INFO  c.u.rest.UserRestController - User deleted with ID: 1
+2024-09-17 15:27:31 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-17 15:27:31 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.UserApplicationTests]: UserApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-17 15:27:31 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.UserApplicationTests
+2024-09-17 15:27:31 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-17 15:27:31 INFO  c.u.UserApplicationTests - Starting UserApplicationTests using Java 21.0.3 with PID 81623 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-17 15:27:31 INFO  c.u.UserApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:27:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:27:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2024-09-17 15:27:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-17 15:27:32 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65b69ccb
+2024-09-17 15:27:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-17 15:27:32 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:27:32 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:27:32 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-17 15:27:32 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:27:32 INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.usermanagement.entities.User (class must be instantiated by Interceptor)
+2024-09-17 15:27:32 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:27:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:27:32 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:27:32 INFO  c.u.UserApplicationTests - Started UserApplicationTests in 1.092 seconds (process running for 2.949)
+2024-09-17 15:27:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:27:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:27:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-17 15:28:09 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-17 15:28:09 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-17 15:28:09 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-17 15:28:09 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-17 15:28:09 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-17 15:28:09 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-17 15:28:09 ERROR c.u.services.UserService - User with ID 1 not found for deletion
+2024-09-17 15:28:09 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-17 15:28:09 INFO  c.u.services.UserService - Successfully saved user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-17 15:28:09 DEBUG c.u.services.UserService - Get all users.
+2024-09-17 15:28:09 DEBUG c.u.services.UserService - Received 1 users
+2024-09-17 15:28:09 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-17 15:28:09 INFO  c.u.services.UserService - Successfully deleted user with ID: 1
+2024-09-17 15:28:09 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ControllerTest]: using SpringBootContextLoader
+2024-09-17 15:28:09 DEBUG o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.usermanagement.rest.ControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-09-17 15:28:09 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.rest.ControllerTest]: ControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-17 15:28:09 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizerFactory implementations for test class [ControllerTest]: [ImportsContextCustomizerFactory, ExcludeFilterContextCustomizerFactory, HttpGraphQlTesterContextCustomizerFactory, DuplicateJsonObjectContextCustomizerFactory, MockitoContextCustomizerFactory, TestRestTemplateContextCustomizerFactory, WebTestClientContextCustomizerFactory, DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory, OverrideAutoConfigurationContextCustomizerFactory, ObservabilityContextCustomizerFactory, TypeExcludeFiltersContextCustomizerFactory, PropertyMappingContextCustomizerFactory, WebDriverContextCustomizerFactory, MockServerContainerContextCustomizerFactory, DynamicPropertiesContextCustomizerFactory]
+2024-09-17 15:28:09 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizers for test class [ControllerTest]: [ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer, DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, WebDriverContextCustomizer]
+2024-09-17 15:28:09 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/B0317258/Desktop/UserManagement-main/target/classes/com/usermanagement/UserApplication.class]
+2024-09-17 15:28:09 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.rest.ControllerTest
+2024-09-17 15:28:09 DEBUG o.s.t.c.u.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.observation.MicrometerObservationRegistryTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: io.micrometer.context.ThreadLocalAccessor. MicrometerObservationRegistryTestExecutionListener requires io.micrometer:micrometer-observation:1.10.8 or higher and io.micrometer:context-propagation:1.0.3 or higher.
+2024-09-17 15:28:09 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using TestExecutionListeners for test class [ControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2024-09-17 15:28:09 DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener - Before test class: class [ControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+2024-09-17 15:28:10 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-17 15:28:10 INFO  c.usermanagement.rest.ControllerTest - Starting ControllerTest using Java 21.0.3 with PID 81701 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-17 15:28:10 INFO  c.usermanagement.rest.ControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:28:10 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-09-17 15:28:10 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-09-17 15:28:10 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2024-09-17 15:28:10 INFO  c.usermanagement.rest.ControllerTest - Started ControllerTest in 0.473 seconds (process running for 1.545)
+2024-09-17 15:28:10 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-17 15:28:10 INFO  c.u.rest.UserRestController - User added with ID: 1
+2024-09-17 15:28:10 INFO  c.u.rest.UserRestController - Found 2 users
+2024-09-17 15:28:10 INFO  c.u.rest.UserRestController - User updated with ID: 1
+2024-09-17 15:28:10 INFO  c.u.rest.UserRestController - User found with ID: 1
+2024-09-17 15:28:10 INFO  c.u.rest.UserRestController - User deleted with ID: 1
+2024-09-17 15:28:10 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-17 15:28:10 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.UserApplicationTests]: UserApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-17 15:28:10 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.UserApplicationTests
+2024-09-17 15:28:10 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-17 15:28:10 INFO  c.u.UserApplicationTests - Starting UserApplicationTests using Java 21.0.3 with PID 81701 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-17 15:28:10 INFO  c.u.UserApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:28:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:28:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2024-09-17 15:28:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-17 15:28:11 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65b69ccb
+2024-09-17 15:28:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-17 15:28:11 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:28:11 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:28:11 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-17 15:28:11 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:28:11 INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.usermanagement.entities.User (class must be instantiated by Interceptor)
+2024-09-17 15:28:11 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:28:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:28:11 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:28:11 INFO  c.u.UserApplicationTests - Started UserApplicationTests in 1.018 seconds (process running for 2.664)
+2024-09-17 15:28:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:28:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:28:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
