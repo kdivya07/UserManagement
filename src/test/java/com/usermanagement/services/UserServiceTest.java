@@ -33,7 +33,6 @@ public class UserServiceTest {
     @BeforeEach
     void setUp() {
         user = new User(1, "test", "user", "password123", "test@example.com");
-
         userList = new ArrayList<>();
         userList.add(user);
     }

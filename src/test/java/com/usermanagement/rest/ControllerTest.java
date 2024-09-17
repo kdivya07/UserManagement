@@ -10,7 +10,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 
 import java.util.Arrays;
-import java.util.Collections;
+
 import java.util.List;
 
 import com.usermanagement.entities.User;
@@ -24,7 +24,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 @WebMvcTest(UserRestController.class)
 public class ControllerTest {
@@ -35,21 +34,15 @@ public class ControllerTest {
     @MockBean
     private UserServiceImpl userService;
 
-    private UserRestController userRestController;
-
     private ObjectMapper objectMapper = new ObjectMapper();
 
     private User user;
-//    private List<User> userList;
 
     @BeforeEach
     public void setup() {
         MockitoAnnotations.openMocks(this);
         user = new User(1, "test", "user", "password123", "test@example.com");
-
-  //      userList = Collections.singletonList(user);
     }
-
 
     @Test
     public void testFindAllUsers() throws Exception {
