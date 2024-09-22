@@ -1,6 +1,5 @@
 package com.usermanagement.rest;
 
-import com.usermanagement.exceptions.UserNotFoundException;
 import com.usermanagement.services.UserService;
 import com.usermanagement.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;

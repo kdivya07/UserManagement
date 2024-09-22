@@ -3314,3 +3314,940 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2024-09-17 15:28:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-09-17 15:28:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-09-17 15:28:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-18 15:30:52 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-18 15:30:52 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-18 15:30:52 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-18 15:30:52 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-18 15:30:52 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-18 15:30:52 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-18 15:30:52 ERROR c.u.services.UserService - User with ID 1 not found for deletion
+2024-09-18 15:30:52 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-18 15:30:52 INFO  c.u.services.UserService - Successfully saved user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-18 15:30:52 DEBUG c.u.services.UserService - Get all users.
+2024-09-18 15:30:52 DEBUG c.u.services.UserService - Received 1 users
+2024-09-18 15:30:52 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-18 15:30:52 INFO  c.u.services.UserService - Successfully deleted user with ID: 1
+2024-09-18 15:32:17 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ControllerTest]: using SpringBootContextLoader
+2024-09-18 15:32:17 DEBUG o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.usermanagement.rest.ControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-09-18 15:32:17 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.rest.ControllerTest]: ControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-18 15:32:17 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizerFactory implementations for test class [ControllerTest]: [ImportsContextCustomizerFactory, ExcludeFilterContextCustomizerFactory, HttpGraphQlTesterContextCustomizerFactory, DuplicateJsonObjectContextCustomizerFactory, MockitoContextCustomizerFactory, TestRestTemplateContextCustomizerFactory, WebTestClientContextCustomizerFactory, DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory, OverrideAutoConfigurationContextCustomizerFactory, ObservabilityContextCustomizerFactory, TypeExcludeFiltersContextCustomizerFactory, PropertyMappingContextCustomizerFactory, WebDriverContextCustomizerFactory, MockServerContainerContextCustomizerFactory, DynamicPropertiesContextCustomizerFactory]
+2024-09-18 15:32:17 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizers for test class [ControllerTest]: [ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer, DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, WebDriverContextCustomizer]
+2024-09-18 15:32:17 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/B0317258/Desktop/UserManagement-main/target/classes/com/usermanagement/UserApplication.class]
+2024-09-18 15:32:17 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.rest.ControllerTest
+2024-09-18 15:32:17 DEBUG o.s.t.c.u.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.observation.MicrometerObservationRegistryTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: io.micrometer.context.ThreadLocalAccessor. MicrometerObservationRegistryTestExecutionListener requires io.micrometer:micrometer-observation:1.10.8 or higher and io.micrometer:context-propagation:1.0.3 or higher.
+2024-09-18 15:32:17 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using TestExecutionListeners for test class [ControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2024-09-18 15:32:17 DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener - Before test class: class [ControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+2024-09-18 15:32:18 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-18 15:32:18 INFO  c.usermanagement.rest.ControllerTest - Starting ControllerTest using Java 21.0.3 with PID 88113 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-18 15:32:18 INFO  c.usermanagement.rest.ControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-09-18 15:32:18 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-09-18 15:32:18 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-09-18 15:32:18 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2024-09-18 15:32:19 INFO  c.usermanagement.rest.ControllerTest - Started ControllerTest in 0.975 seconds (process running for 1.638)
+2024-09-18 15:32:19 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-18 15:32:19 INFO  c.u.rest.UserRestController - User added with ID: 1
+2024-09-18 15:32:19 INFO  c.u.rest.UserRestController - Found 2 users
+2024-09-18 15:32:19 INFO  c.u.rest.UserRestController - User updated with ID: 1
+2024-09-18 15:32:19 INFO  c.u.rest.UserRestController - User found with ID: 1
+2024-09-18 15:32:19 INFO  c.u.rest.UserRestController - User deleted with ID: 1
+2024-09-18 15:32:19 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-19 16:48:23 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-19 16:48:23 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-19 16:48:23 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-19 16:48:23 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-19 16:48:23 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-19 16:48:23 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-19 16:48:23 ERROR c.u.services.UserService - User with ID 1 not found for deletion
+2024-09-19 16:48:23 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-19 16:48:23 INFO  c.u.services.UserService - Successfully saved user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-19 16:48:23 DEBUG c.u.services.UserService - Get all users.
+2024-09-19 16:48:23 DEBUG c.u.services.UserService - Received 1 users
+2024-09-19 16:48:23 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-19 16:48:23 INFO  c.u.services.UserService - Successfully deleted user with ID: 1
+2024-09-20 16:20:19 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-20 16:20:19 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-20 16:20:19 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-20 16:20:19 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-20 16:20:19 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-20 16:20:19 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-20 16:20:19 ERROR c.u.services.UserService - User with ID 1 not found for deletion
+2024-09-20 16:20:19 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-20 16:20:19 INFO  c.u.services.UserService - Successfully saved user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-20 16:20:19 DEBUG c.u.services.UserService - Get all users.
+2024-09-20 16:20:19 DEBUG c.u.services.UserService - Received 1 users
+2024-09-20 16:20:19 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-20 16:20:19 INFO  c.u.services.UserService - Successfully deleted user with ID: 1
+2024-09-20 16:21:07 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-20 16:21:07 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-20 16:21:07 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-20 16:21:07 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-20 16:21:07 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-20 16:21:07 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-20 16:21:07 ERROR c.u.services.UserService - User with ID 1 not found for deletion
+2024-09-20 16:21:07 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-20 16:21:07 INFO  c.u.services.UserService - Successfully saved user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-20 16:21:07 DEBUG c.u.services.UserService - Get all users.
+2024-09-20 16:21:07 DEBUG c.u.services.UserService - Received 1 users
+2024-09-20 16:21:07 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-20 16:21:07 INFO  c.u.services.UserService - Successfully deleted user with ID: 1
+2024-09-20 16:21:10 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-20 16:21:10 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-20 16:21:10 INFO  com.usermanagement.UserApplication - Starting UserApplication using Java 21.0.3 with PID 7633 (/Users/B0317258/Desktop/UserManagement-main/target/classes started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-20 16:21:10 INFO  com.usermanagement.UserApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-20 16:21:10 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-20 16:21:10 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-20 16:21:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-20 16:21:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interface.
+2024-09-20 16:21:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-20 16:21:11 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-20 16:21:11 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-20 16:21:11 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-20 16:21:11 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring embedded WebApplicationContext
+2024-09-20 16:21:11 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 625 ms
+2024-09-20 16:21:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-20 16:21:11 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a1b459d
+2024-09-20 16:21:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-20 16:21:11 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-20 16:21:11 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-20 16:21:11 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-20 16:21:11 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-20 16:21:12 INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.usermanagement.entities.User (class must be instantiated by Interceptor)
+2024-09-20 16:21:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-20 16:21:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-20 16:21:12 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-20 16:21:12 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2024-09-20 16:21:12 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-20 16:21:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/user-mgmt'
+2024-09-20 16:21:12 INFO  com.usermanagement.UserApplication - Started UserApplication in 1.971 seconds (process running for 2.353)
+2024-09-20 16:21:12 INFO  com.usermanagement.UserApplication - Application ended.
+2024-09-20 16:21:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-20 16:21:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-20 16:21:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-20 16:21:14 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-20 16:21:14 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-20 16:21:14 INFO  com.usermanagement.UserApplication - Starting UserApplication using Java 21.0.3 with PID 7638 (/Users/B0317258/Desktop/UserManagement-main/target/classes started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-20 16:21:14 INFO  com.usermanagement.UserApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-20 16:21:14 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-20 16:21:14 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-20 16:21:14 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-20 16:21:14 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2024-09-20 16:21:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-20 16:21:15 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-20 16:21:15 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-20 16:21:15 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-20 16:21:15 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring embedded WebApplicationContext
+2024-09-20 16:21:15 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 626 ms
+2024-09-20 16:21:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-20 16:21:15 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bb21f46
+2024-09-20 16:21:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-20 16:21:15 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-20 16:21:15 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-20 16:21:15 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-20 16:21:15 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-20 16:21:15 INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.usermanagement.entities.User (class must be instantiated by Interceptor)
+2024-09-20 16:21:15 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-20 16:21:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-20 16:21:16 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-20 16:21:16 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2024-09-20 16:21:16 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-20 16:21:16 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/user-mgmt'
+2024-09-20 16:21:16 INFO  com.usermanagement.UserApplication - Started UserApplication in 1.979 seconds (process running for 2.34)
+2024-09-20 16:21:16 INFO  com.usermanagement.UserApplication - Application ended.
+2024-09-20 16:21:25 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-20 16:21:25 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-20 16:21:25 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-20 16:21:25 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.orm.jpa.JpaSystemException: No default constructor for entity 'com.usermanagement.entities.User']
+2024-09-20 16:23:55 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.orm.jpa.JpaSystemException: No default constructor for entity 'com.usermanagement.entities.User']
+2024-09-20 16:26:52 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-09-20 16:26:52 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-09-20 16:26:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-20 16:26:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-20 16:26:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-20 16:26:52 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-20 16:26:52 INFO  com.usermanagement.UserApplication - Starting UserApplication using Java 21.0.3 with PID 7638 (/Users/B0317258/Desktop/UserManagement-main/target/classes started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-20 16:26:52 INFO  com.usermanagement.UserApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-20 16:26:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-20 16:26:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2024-09-20 16:26:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-20 16:26:52 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-20 16:26:52 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-20 16:26:52 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-20 16:26:52 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring embedded WebApplicationContext
+2024-09-20 16:26:52 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 211 ms
+2024-09-20 16:26:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-09-20 16:26:52 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a8fa9ed
+2024-09-20 16:26:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-09-20 16:26:52 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-20 16:26:52 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-20 16:26:52 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-20 16:26:52 INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.usermanagement.entities.User (class must be instantiated by Interceptor)
+2024-09-20 16:26:52 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-20 16:26:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-20 16:26:52 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-20 16:26:52 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2024-09-20 16:26:52 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-20 16:26:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/user-mgmt'
+2024-09-20 16:26:52 INFO  com.usermanagement.UserApplication - Started UserApplication in 0.473 seconds (process running for 338.738)
+2024-09-20 16:26:52 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-20 16:26:52 INFO  com.usermanagement.UserApplication - Application ended.
+2024-09-20 16:26:53 INFO  c.u.services.UserService - Saving user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-20 16:26:53 INFO  c.u.services.UserService - Successfully saved user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-20 16:26:54 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-09-20 16:26:54 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-09-20 16:26:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-20 16:26:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-09-20 16:26:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-09-20 16:26:54 INFO  com.usermanagement.UserApplication - Application started.
+2024-09-20 16:26:54 INFO  com.usermanagement.UserApplication - Starting UserApplication using Java 21.0.3 with PID 7638 (/Users/B0317258/Desktop/UserManagement-main/target/classes started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-20 16:26:54 INFO  com.usermanagement.UserApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-20 16:26:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-20 16:26:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-09-20 16:26:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-09-20 16:26:54 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-20 16:26:54 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-20 16:26:54 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-20 16:26:54 INFO  o.a.c.c.C.[.[localhost].[/user-mgmt] - Initializing Spring embedded WebApplicationContext
+2024-09-20 16:26:54 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 96 ms
+2024-09-20 16:26:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-09-20 16:26:54 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31a7bc93
+2024-09-20 16:26:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-09-20 16:26:54 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-20 16:26:54 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-20 16:26:54 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-20 16:26:54 INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.usermanagement.entities.User (class must be instantiated by Interceptor)
+2024-09-20 16:26:54 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-20 16:26:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-20 16:26:54 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-20 16:26:54 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2024-09-20 16:26:54 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-20 16:26:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/user-mgmt'
+2024-09-20 16:26:54 INFO  com.usermanagement.UserApplication - Started UserApplication in 0.34 seconds (process running for 340.51)
+2024-09-20 16:26:54 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-09-20 16:26:54 INFO  com.usermanagement.UserApplication - Application ended.
+2024-09-20 16:27:50 INFO  c.u.services.UserService - Saving user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-20 16:27:50 INFO  c.u.services.UserService - Successfully saved user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-20 16:27:58 INFO  c.u.services.UserService - Saving user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-20 16:27:58 INFO  c.u.services.UserService - Successfully saved user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-20 16:28:03 INFO  c.u.services.UserService - Saving user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-20 16:28:03 INFO  c.u.services.UserService - Successfully saved user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-20 16:35:38 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=5m44s357ms).
+2024-09-20 16:44:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-20 16:44:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-09-20 16:44:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-09-20 16:45:39 INFO  c.u.services.UserService - Saving user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-20 16:45:39 INFO  c.u.services.UserService - Successfully saved user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-21 23:45:13 INFO  c.u.services.UserService - Saving user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-21 23:45:13 INFO  c.u.services.UserService - Successfully saved user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-22 22:12:07 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-22 22:12:07 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-22 22:12:07 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-22 22:12:07 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-22 22:12:07 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-22 22:12:07 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-22 22:12:07 ERROR c.u.services.UserService - User with ID 1 not found for deletion
+2024-09-22 22:12:07 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-22 22:12:07 INFO  c.u.services.UserService - Successfully saved user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-22 22:12:07 DEBUG c.u.services.UserService - Get all users.
+2024-09-22 22:12:07 DEBUG c.u.services.UserService - Received 1 users
+2024-09-22 22:12:07 INFO  c.u.services.UserService - Saving user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-22 22:12:07 INFO  c.u.services.UserService - Successfully saved user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-22 22:12:07 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-22 22:12:07 INFO  c.u.services.UserService - Successfully deleted user with ID: 1
+2024-09-22 22:12:07 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ControllerTest]: using SpringBootContextLoader
+2024-09-22 22:12:07 DEBUG o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.usermanagement.rest.ControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-09-22 22:12:07 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.rest.ControllerTest]: ControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-22 22:12:07 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizerFactory implementations for test class [ControllerTest]: [ImportsContextCustomizerFactory, ExcludeFilterContextCustomizerFactory, HttpGraphQlTesterContextCustomizerFactory, DuplicateJsonObjectContextCustomizerFactory, MockitoContextCustomizerFactory, TestRestTemplateContextCustomizerFactory, WebTestClientContextCustomizerFactory, DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory, OverrideAutoConfigurationContextCustomizerFactory, ObservabilityContextCustomizerFactory, TypeExcludeFiltersContextCustomizerFactory, PropertyMappingContextCustomizerFactory, WebDriverContextCustomizerFactory, MockServerContainerContextCustomizerFactory, DynamicPropertiesContextCustomizerFactory]
+2024-09-22 22:12:07 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizers for test class [ControllerTest]: [ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer, DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, WebDriverContextCustomizer]
+2024-09-22 22:12:07 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/B0317258/Desktop/UserManagement-main/target/classes/com/usermanagement/UserApplication.class]
+2024-09-22 22:12:07 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.rest.ControllerTest
+2024-09-22 22:12:07 DEBUG o.s.t.c.u.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.observation.MicrometerObservationRegistryTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: io.micrometer.context.ThreadLocalAccessor. MicrometerObservationRegistryTestExecutionListener requires io.micrometer:micrometer-observation:1.10.8 or higher and io.micrometer:context-propagation:1.0.3 or higher.
+2024-09-22 22:12:07 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using TestExecutionListeners for test class [ControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2024-09-22 22:12:07 DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener - Before test class: class [ControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+2024-09-22 22:12:07 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-22 22:12:08 INFO  c.usermanagement.rest.ControllerTest - Starting ControllerTest using Java 21.0.3 with PID 16678 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-22 22:12:08 INFO  c.usermanagement.rest.ControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-09-22 22:12:08 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-09-22 22:12:08 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-09-22 22:12:08 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-09-22 22:12:08 INFO  c.usermanagement.rest.ControllerTest - Started ControllerTest in 0.486 seconds (process running for 1.588)
+2024-09-22 22:12:08 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-22 22:12:08 INFO  c.u.rest.UserRestController - User added with ID: 1
+2024-09-22 22:12:08 INFO  c.u.rest.UserRestController - Found 2 users
+2024-09-22 22:12:08 INFO  c.u.rest.UserRestController - User updated with ID: 1
+2024-09-22 22:12:08 INFO  c.u.rest.UserRestController - User found with ID: 1
+2024-09-22 22:12:08 INFO  c.u.rest.UserRestController - User deleted with ID: 1
+2024-09-22 22:12:08 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-22 22:12:08 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.UserApplicationTests]: UserApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-22 22:12:08 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.UserApplicationTests
+2024-09-22 22:12:08 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-22 22:12:08 INFO  c.u.UserApplicationTests - Starting UserApplicationTests using Java 21.0.3 with PID 16678 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-22 22:12:08 INFO  c.u.UserApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-09-22 22:12:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-22 22:12:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2024-09-22 22:12:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-22 22:12:08 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cf669f2
+2024-09-22 22:12:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-22 22:12:08 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-22 22:12:08 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-22 22:12:08 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-22 22:12:09 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-22 22:12:09 INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.usermanagement.entities.User (class must be instantiated by Interceptor)
+2024-09-22 22:12:09 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-22 22:12:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-22 22:12:09 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-22 22:12:09 INFO  c.u.UserApplicationTests - Started UserApplicationTests in 1.063 seconds (process running for 2.77)
+2024-09-22 22:12:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-22 22:12:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-22 22:12:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-22 22:14:54 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-22 22:14:54 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-22 22:14:54 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-22 22:14:54 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-22 22:14:54 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-22 22:14:54 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-22 22:14:54 ERROR c.u.services.UserService - User with ID 1 not found for deletion
+2024-09-22 22:14:54 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-22 22:14:54 INFO  c.u.services.UserService - Successfully saved user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-22 22:14:54 DEBUG c.u.services.UserService - Get all users.
+2024-09-22 22:14:54 DEBUG c.u.services.UserService - Received 1 users
+2024-09-22 22:14:54 INFO  c.u.services.UserService - Saving user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-22 22:14:54 INFO  c.u.services.UserService - Successfully saved user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-22 22:14:54 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-22 22:14:54 INFO  c.u.services.UserService - Successfully deleted user with ID: 1
+2024-09-22 22:14:54 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ControllerTest]: using SpringBootContextLoader
+2024-09-22 22:14:54 DEBUG o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.usermanagement.rest.ControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-09-22 22:14:54 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.rest.ControllerTest]: ControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-22 22:14:54 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizerFactory implementations for test class [ControllerTest]: [ImportsContextCustomizerFactory, ExcludeFilterContextCustomizerFactory, HttpGraphQlTesterContextCustomizerFactory, DuplicateJsonObjectContextCustomizerFactory, MockitoContextCustomizerFactory, TestRestTemplateContextCustomizerFactory, WebTestClientContextCustomizerFactory, DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory, OverrideAutoConfigurationContextCustomizerFactory, ObservabilityContextCustomizerFactory, TypeExcludeFiltersContextCustomizerFactory, PropertyMappingContextCustomizerFactory, WebDriverContextCustomizerFactory, MockServerContainerContextCustomizerFactory, DynamicPropertiesContextCustomizerFactory]
+2024-09-22 22:14:54 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizers for test class [ControllerTest]: [ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer, DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, WebDriverContextCustomizer]
+2024-09-22 22:14:54 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/B0317258/Desktop/UserManagement-main/target/classes/com/usermanagement/UserApplication.class]
+2024-09-22 22:14:54 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.rest.ControllerTest
+2024-09-22 22:14:54 DEBUG o.s.t.c.u.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.observation.MicrometerObservationRegistryTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: io.micrometer.context.ThreadLocalAccessor. MicrometerObservationRegistryTestExecutionListener requires io.micrometer:micrometer-observation:1.10.8 or higher and io.micrometer:context-propagation:1.0.3 or higher.
+2024-09-22 22:14:54 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using TestExecutionListeners for test class [ControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2024-09-22 22:14:54 DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener - Before test class: class [ControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+2024-09-22 22:14:54 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-22 22:14:54 INFO  c.usermanagement.rest.ControllerTest - Starting ControllerTest using Java 21.0.3 with PID 16829 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-22 22:14:54 INFO  c.usermanagement.rest.ControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-09-22 22:14:54 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-09-22 22:14:54 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-09-22 22:14:54 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-09-22 22:14:55 INFO  c.usermanagement.rest.ControllerTest - Started ControllerTest in 0.475 seconds (process running for 1.549)
+2024-09-22 22:14:55 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-22 22:14:55 INFO  c.u.rest.UserRestController - User added with ID: 1
+2024-09-22 22:14:55 INFO  c.u.rest.UserRestController - Found 2 users
+2024-09-22 22:14:55 INFO  c.u.rest.UserRestController - User updated with ID: 1
+2024-09-22 22:14:55 INFO  c.u.rest.UserRestController - User found with ID: 1
+2024-09-22 22:14:55 INFO  c.u.rest.UserRestController - User deleted with ID: 1
+2024-09-22 22:14:55 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-22 22:14:55 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.UserApplicationTests]: UserApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-22 22:14:55 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.UserApplicationTests
+2024-09-22 22:14:55 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-22 22:14:55 INFO  c.u.UserApplicationTests - Starting UserApplicationTests using Java 21.0.3 with PID 16829 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-22 22:14:55 INFO  c.u.UserApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-09-22 22:14:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-22 22:14:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2024-09-22 22:14:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-22 22:14:55 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c6fe482
+2024-09-22 22:14:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-22 22:14:55 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-22 22:14:55 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-22 22:14:55 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-22 22:14:55 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-22 22:14:55 INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.usermanagement.entities.User (class must be instantiated by Interceptor)
+2024-09-22 22:14:55 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-22 22:14:55 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-22 22:14:56 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-22 22:14:56 INFO  c.u.UserApplicationTests - Started UserApplicationTests in 1.056 seconds (process running for 2.717)
+2024-09-22 22:14:56 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-22 22:14:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-22 22:14:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-22 22:20:23 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-22 22:20:24 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-22 22:20:24 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-22 22:20:24 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-22 22:20:24 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-22 22:20:24 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-22 22:20:24 ERROR c.u.services.UserService - User with ID 1 not found for deletion
+2024-09-22 22:20:24 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-22 22:20:24 INFO  c.u.services.UserService - Successfully saved user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-22 22:20:24 DEBUG c.u.services.UserService - Get all users.
+2024-09-22 22:20:24 DEBUG c.u.services.UserService - Received 1 users
+2024-09-22 22:20:24 INFO  c.u.services.UserService - Saving user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-22 22:20:24 INFO  c.u.services.UserService - Successfully saved user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-22 22:20:24 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-22 22:20:24 INFO  c.u.services.UserService - Successfully deleted user with ID: 1
+2024-09-22 22:20:24 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ControllerTest]: using SpringBootContextLoader
+2024-09-22 22:20:24 DEBUG o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.usermanagement.rest.ControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-09-22 22:20:24 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.rest.ControllerTest]: ControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-22 22:20:24 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizerFactory implementations for test class [ControllerTest]: [ImportsContextCustomizerFactory, ExcludeFilterContextCustomizerFactory, HttpGraphQlTesterContextCustomizerFactory, DuplicateJsonObjectContextCustomizerFactory, MockitoContextCustomizerFactory, TestRestTemplateContextCustomizerFactory, WebTestClientContextCustomizerFactory, DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory, OverrideAutoConfigurationContextCustomizerFactory, ObservabilityContextCustomizerFactory, TypeExcludeFiltersContextCustomizerFactory, PropertyMappingContextCustomizerFactory, WebDriverContextCustomizerFactory, MockServerContainerContextCustomizerFactory, DynamicPropertiesContextCustomizerFactory]
+2024-09-22 22:20:24 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizers for test class [ControllerTest]: [ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer, DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, WebDriverContextCustomizer]
+2024-09-22 22:20:24 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/B0317258/Desktop/UserManagement-main/target/classes/com/usermanagement/UserApplication.class]
+2024-09-22 22:20:24 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.rest.ControllerTest
+2024-09-22 22:20:24 DEBUG o.s.t.c.u.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.observation.MicrometerObservationRegistryTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: io.micrometer.context.ThreadLocalAccessor. MicrometerObservationRegistryTestExecutionListener requires io.micrometer:micrometer-observation:1.10.8 or higher and io.micrometer:context-propagation:1.0.3 or higher.
+2024-09-22 22:20:24 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using TestExecutionListeners for test class [ControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2024-09-22 22:20:24 DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener - Before test class: class [ControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+2024-09-22 22:20:24 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-22 22:20:24 INFO  c.usermanagement.rest.ControllerTest - Starting ControllerTest using Java 21.0.3 with PID 16865 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-22 22:20:24 INFO  c.usermanagement.rest.ControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-09-22 22:20:24 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-09-22 22:20:24 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-09-22 22:20:24 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2024-09-22 22:20:24 INFO  c.usermanagement.rest.ControllerTest - Started ControllerTest in 0.483 seconds (process running for 1.603)
+2024-09-22 22:20:24 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-22 22:20:24 INFO  c.u.rest.UserRestController - User added with ID: 1
+2024-09-22 22:20:24 INFO  c.u.rest.UserRestController - Found 2 users
+2024-09-22 22:20:24 INFO  c.u.rest.UserRestController - User updated with ID: 1
+2024-09-22 22:20:24 INFO  c.u.rest.UserRestController - User found with ID: 1
+2024-09-22 22:20:24 INFO  c.u.rest.UserRestController - User deleted with ID: 1
+2024-09-22 22:20:24 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-22 22:20:24 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.UserApplicationTests]: UserApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-22 22:20:24 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.UserApplicationTests
+2024-09-22 22:20:24 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-22 22:20:24 INFO  c.u.UserApplicationTests - Starting UserApplicationTests using Java 21.0.3 with PID 16865 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-22 22:20:24 INFO  c.u.UserApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-09-22 22:20:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-22 22:20:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2024-09-22 22:20:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-22 22:20:25 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f251bf1
+2024-09-22 22:20:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-22 22:20:25 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-22 22:20:25 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-22 22:20:25 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-22 22:20:25 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-22 22:20:25 INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.usermanagement.entities.User (class must be instantiated by Interceptor)
+2024-09-22 22:20:25 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-22 22:20:25 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-22 22:20:25 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-22 22:20:25 INFO  c.u.UserApplicationTests - Started UserApplicationTests in 1.037 seconds (process running for 2.743)
+2024-09-22 22:20:25 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-22 22:20:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-22 22:20:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-22 22:21:55 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-22 22:21:55 DEBUG c.u.services.UserService - Finding user with ID: 1
+2024-09-22 22:21:55 ERROR c.u.services.UserService - User with ID 1 not found
+2024-09-22 22:21:55 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-22 22:21:55 ERROR c.u.services.UserService - Attempted to save user with existing email: test@example.com
+2024-09-22 22:21:55 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-22 22:21:55 ERROR c.u.services.UserService - User with ID 1 not found for deletion
+2024-09-22 22:21:55 INFO  c.u.services.UserService - Saving user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-22 22:21:55 INFO  c.u.services.UserService - Successfully saved user: User(id=1, firstName=test, lastName=user, password=password123, email=test@example.com)
+2024-09-22 22:21:55 DEBUG c.u.services.UserService - Get all users.
+2024-09-22 22:21:55 DEBUG c.u.services.UserService - Received 1 users
+2024-09-22 22:21:55 INFO  c.u.services.UserService - Saving user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-22 22:21:55 INFO  c.u.services.UserService - Successfully saved user: User(id=2, firstName=test, lastName=user, password=null, email=test@example.com)
+2024-09-22 22:21:55 INFO  c.u.services.UserService - Deleting user with ID: 1
+2024-09-22 22:21:55 INFO  c.u.services.UserService - Successfully deleted user with ID: 1
+2024-09-22 22:21:55 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ControllerTest]: using SpringBootContextLoader
+2024-09-22 22:21:55 DEBUG o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.usermanagement.rest.ControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-09-22 22:21:55 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.rest.ControllerTest]: ControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-22 22:21:55 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizerFactory implementations for test class [ControllerTest]: [ImportsContextCustomizerFactory, ExcludeFilterContextCustomizerFactory, HttpGraphQlTesterContextCustomizerFactory, DuplicateJsonObjectContextCustomizerFactory, MockitoContextCustomizerFactory, TestRestTemplateContextCustomizerFactory, WebTestClientContextCustomizerFactory, DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory, OverrideAutoConfigurationContextCustomizerFactory, ObservabilityContextCustomizerFactory, TypeExcludeFiltersContextCustomizerFactory, PropertyMappingContextCustomizerFactory, WebDriverContextCustomizerFactory, MockServerContainerContextCustomizerFactory, DynamicPropertiesContextCustomizerFactory]
+2024-09-22 22:21:55 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using ContextCustomizers for test class [ControllerTest]: [ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer, DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, WebDriverContextCustomizer]
+2024-09-22 22:21:55 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/B0317258/Desktop/UserManagement-main/target/classes/com/usermanagement/UserApplication.class]
+2024-09-22 22:21:55 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.rest.ControllerTest
+2024-09-22 22:21:55 DEBUG o.s.t.c.u.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.observation.MicrometerObservationRegistryTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: io.micrometer.context.ThreadLocalAccessor. MicrometerObservationRegistryTestExecutionListener requires io.micrometer:micrometer-observation:1.10.8 or higher and io.micrometer:context-propagation:1.0.3 or higher.
+2024-09-22 22:21:55 DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using TestExecutionListeners for test class [ControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2024-09-22 22:21:55 DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener - Before test class: class [ControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+2024-09-22 22:21:56 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-22 22:21:56 INFO  c.usermanagement.rest.ControllerTest - Starting ControllerTest using Java 21.0.3 with PID 16899 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-22 22:21:56 INFO  c.usermanagement.rest.ControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-09-22 22:21:56 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-09-22 22:21:56 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-09-22 22:21:56 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2024-09-22 22:21:56 INFO  c.usermanagement.rest.ControllerTest - Started ControllerTest in 0.468 seconds (process running for 1.543)
+2024-09-22 22:21:56 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-22 22:21:56 INFO  c.u.rest.UserRestController - User added with ID: 1
+2024-09-22 22:21:56 INFO  c.u.rest.UserRestController - Found 2 users
+2024-09-22 22:21:56 INFO  c.u.rest.UserRestController - User updated with ID: 1
+2024-09-22 22:21:56 INFO  c.u.rest.UserRestController - User found with ID: 1
+2024-09-22 22:21:56 INFO  c.u.rest.UserRestController - User deleted with ID: 1
+2024-09-22 22:21:56 WARN  c.u.rest.UserRestController - User ID not found: 1
+2024-09-22 22:21:56 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usermanagement.UserApplicationTests]: UserApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-22 22:21:56 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usermanagement.UserApplication for test class com.usermanagement.UserApplicationTests
+2024-09-22 22:21:56 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2024-09-22 22:21:56 INFO  c.u.UserApplicationTests - Starting UserApplicationTests using Java 21.0.3 with PID 16899 (started by B0317258 in /Users/B0317258/Desktop/UserManagement-main)
+2024-09-22 22:21:56 INFO  c.u.UserApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-09-22 22:21:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-22 22:21:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2024-09-22 22:21:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-22 22:21:56 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f251bf1
+2024-09-22 22:21:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-22 22:21:57 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-22 22:21:57 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-22 22:21:57 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-22 22:21:57 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-22 22:21:57 INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: com.usermanagement.entities.User (class must be instantiated by Interceptor)
+2024-09-22 22:21:57 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-22 22:21:57 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-22 22:21:57 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-22 22:21:57 INFO  c.u.UserApplicationTests - Started UserApplicationTests in 1.012 seconds (process running for 2.658)
+2024-09-22 22:21:57 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-22 22:21:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-22 22:21:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-22 22:27:04 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:27:04 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:27:04 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:27:04 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:27:04 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:27:04 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:27:04 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:27:04 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:27:30 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:27:30 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:27:30 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:27:30 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:27:30 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:27:30 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:27:30 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:27:30 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:27:30 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:27:30 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:27:30 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:27:30 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:27:30 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:27:30 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:27:30 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:29:24 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:29:24 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:29:24 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:29:24 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:29:24 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:29:24 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:29:24 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:29:24 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:29:24 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:29:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:29:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:29:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:29:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:29:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:29:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:30:50 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:30:50 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:30:50 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:30:50 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:30:50 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:30:50 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:30:50 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:30:50 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:30:50 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:30:50 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:30:50 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:30:50 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:30:50 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:30:50 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:30:50 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:31:22 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:31:22 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:31:22 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:31:22 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:31:22 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:31:22 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:31:22 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:31:22 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:31:22 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:31:22 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:31:22 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:31:22 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:31:22 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:31:22 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:31:22 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:34:59 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:34:59 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:34:59 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:34:59 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:34:59 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:34:59 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:34:59 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:34:59 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:34:59 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:34:59 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:34:59 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:34:59 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:34:59 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:34:59 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:34:59 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:35:40 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:35:40 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:35:40 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:35:40 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:35:40 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:35:40 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:35:40 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:35:40 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:35:40 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:35:40 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:35:40 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:35:40 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:35:40 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:35:40 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:35:40 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:43:24 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:43:24 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:43:24 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:43:24 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:43:24 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:43:24 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:43:24 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:43:24 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:43:24 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:43:24 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:43:44 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:43:44 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:43:44 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:43:44 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:43:44 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:43:44 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:43:44 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:43:44 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:43:44 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:43:44 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:43:44 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:43:44 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:43:44 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:43:44 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:43:44 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:45:03 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:45:03 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:45:03 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:45:03 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:45:03 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:45:03 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:45:03 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:45:03 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:45:03 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:45:03 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:45:03 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:45:03 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:45:03 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:45:03 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:45:03 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:45:11 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:45:11 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:45:11 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:45:11 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:45:11 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:45:11 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:45:11 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:45:11 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:45:11 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:45:11 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:45:11 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:45:11 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:45:11 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:45:11 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:45:11 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:45:54 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:45:54 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:45:54 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:45:54 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:45:54 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:45:54 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:45:54 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:45:54 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:45:54 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:45:54 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:45:54 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:45:54 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:45:54 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:45:54 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:45:54 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:46:19 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:46:19 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:46:19 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:46:19 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:46:19 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:46:19 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:46:19 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:46:19 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:46:19 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:46:19 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:46:19 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:46:19 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:46:19 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:46:19 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:46:19 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:46:25 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:46:25 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:46:25 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:46:25 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:46:25 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:46:25 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:46:25 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:46:25 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:46:25 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:46:25 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:46:56 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:46:56 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:46:56 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:46:56 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:46:56 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:46:56 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:46:56 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:46:56 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:46:56 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:46:56 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:46:56 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:46:56 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:46:56 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:46:56 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:46:56 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:47:44 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:47:44 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:47:44 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:47:44 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:47:44 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:47:44 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:47:44 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:47:44 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:47:44 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:47:44 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:47:44 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:47:44 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:47:44 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:47:44 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:47:44 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:48:07 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:48:07 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:48:07 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:48:07 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:48:07 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:48:07 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:48:07 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:48:07 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:48:07 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:48:07 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:48:07 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:48:07 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:48:07 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:48:07 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:48:07 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:48:59 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:48:59 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:48:59 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:48:59 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:48:59 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:48:59 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:48:59 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:48:59 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:48:59 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:48:59 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:48:59 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:48:59 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:48:59 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:48:59 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:48:59 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:49:13 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:49:13 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:49:13 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:49:13 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:49:13 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:49:13 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:49:13 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:49:13 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:49:13 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:49:13 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:49:13 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:49:13 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:49:13 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:49:13 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:49:13 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2024-09-22 22:49:37 DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-09-22 22:49:37 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-22 22:49:37 DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2024-09-22 22:49:37 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2024-09-22 22:49:37 DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2024-09-22 22:49:37 DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2024-09-22 22:49:37 DEBUG o.h.v.i.e.r.TraversableResolvers - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2024-09-22 22:49:37 DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2024-09-22 22:49:37 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024-09-22 22:49:37 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2024-09-22 22:49:37 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2024-09-22 22:49:37 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2024-09-22 22:49:37 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2024-09-22 22:49:37 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2024-09-22 22:49:37 DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.

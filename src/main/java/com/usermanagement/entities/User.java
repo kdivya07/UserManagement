@@ -3,6 +3,7 @@ package com.usermanagement.entities;
 import com.usermanagement.constants.EntityConstants;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
@@ -18,6 +19,7 @@ public class User {
     private int id;
 
     @NotNull(message = EntityConstants.EMPTY_FIRST_NAME)
+    //@NotBlank(message = "First name cannot be empty")
     @Size(min = 2, max = 30, message = EntityConstants.NAME_SIZE)
     @Column(name = "first_name")
     private String firstName;

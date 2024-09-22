@@ -57,6 +57,10 @@ public class UserServiceImpl implements UserService {
         return userRepository.save(user);
     }
 
+    //mock user -- call this functn
+    // check without password
+
+
     @Transactional
     @Override
     public void deleteById(int id) {

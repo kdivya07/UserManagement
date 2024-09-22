@@ -75,7 +75,6 @@ public class UserServiceTest {
     }
 
     @Test
-    @Transactional
     void save_ExistingEmail_ThrowsDuplicateEmailException() {
         when(userRepository.existsByEmail(user.getEmail())).thenReturn(true);
         DuplicateEmailException thrown = assertThrows(DuplicateEmailException.class, () -> userService.save(user));
@@ -83,7 +82,6 @@ public class UserServiceTest {
     }
 
     @Test
-    @Transactional
     void deleteById_ExistingId_SuccessfullyDeletesUser() {
         Long id = 1L;
         when(userRepository.existsById(id)).thenReturn(true);
@@ -92,12 +90,26 @@ public class UserServiceTest {
     }
 
     @Test
-    @Transactional
     void deleteById_NonExistingId_ThrowsResourceNotFoundException() {
         Long id = 1L;
         when(userRepository.existsById(id)).thenReturn(false);
         ResourceNotFoundException thrown = assertThrows(ResourceNotFoundException.class, () -> userService.deleteById(1));
         assertEquals(String.format(ErrorConstants.USER_NOT_FOUND, 1), thrown.getMessage());
     }
+
+
+    @Test
+    void save_New_SuccessfullySavesUser() {
+        user = new User(2, "test", "user", null, "test@example.com");
+        when(userRepository.existsByEmail(user.getEmail())).thenReturn(false);
+        when(userRepository.save(user)).thenReturn(user);
+        User result = userService.save(user);
+        assertNotNull(result);
+        assertEquals(user, result);
+        verify(userRepository).save(user);
+    }
+
+    // apply checkers for notnull all entity
+
 }
 
